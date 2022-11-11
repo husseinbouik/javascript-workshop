@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color:#2146C7;
+    color: white;
+    text-align: center;
+    width: 10%;
+    min-width: 60px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column; 
+}
+main {
+    margin: 0 auto;
+    width: 80%;
+    margin-left: 15%;
+}
+a {
+    font-family: 'Roboto';
+
+    text-decoration: none;
+    color: white;
+    padding: 3.7vh;
+}
+h1 {
+    font-family: 'Roboto';
+    font-size: 40px;
+    padding-top: 50px;
+}
+h2 {
+    color: white;
+    font-family: 'Roboto';
+    background-color: #2146C7;
+    font-weight: 600;
+    font-size: 20px;
+    width: fit-content;
+    padding: 10px 75px 10px 35px;
+    margin-top: 30px;
+    border-radius: 20px 20px 0 0;
+}
+p {
+    font-family: 'Kanit';
+    font-size: 20px;
+    padding: 20px 40px;
+}
+.part {
+    background-color:#B9E0FF;
+    padding: 30px ;
+    border-radius: 0 20px 20px;
+    padding: 0 auto;
+}
+input {
+    font-size: 18px;
+    border: none;
+    margin: 10px 20px 0 0;
+    padding: 5px;
+    border-radius:20px;
+}
+button {
+    background-color:#2146C7;
+    color: white;
+    border: none;
+    padding: 8px 23px;
+    border-radius: 20px;
+    margin-top: 28px;
+    margin-right: 18px;
+}
+button:hover {
+    background-color: #89cffd;
+}
+a:hover {
+    background-color: #89cffd;
+}
+.contenu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.result {
+    text-align: center;
+}
+/******    media queries   ****** */
+@media(max-width:900px) {
+    main {
+        margin: 0 auto;
+        width: 85%;
+        margin-left: 12.5%;
+    }
+}
+@media(max-width:700px) {
+    main {
+        margin: 0 auto;
+        width: 84%;
+        margin-left: 85px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+}
+@media(max-width:600px) {
+    main {
+        margin: 0 auto;
+        width: 83%;
+        margin-left: 80px;
+    }
+}
+@media(max-width:500px) {
+    main {
+        margin: 0 auto;
+        width: 80%;
+        margin-left: 80px;
+    }
+}
+@media(max-width:300px) {
+    main {
+        margin: 0 auto;
+        width: 80%;
+        margin-left: 70px;
+    }
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+}

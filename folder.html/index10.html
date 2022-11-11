@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brief-4</title>
+    <link rel="stylesheet" href="../folder.css/style10.css">
+    <script src="../folder.js/script10.js"></script>
+</head>
+<body>
+    <nav>
+    <a href="../folder.html/index1.html">EX1</a>
+    <a href="../folder.html/index2.html">EX2</a>
+    <a href="../folder.html/index3.html">EX3</a>
+    <a href="../folder.html/index4.html">EX4</a>
+    <a href="../folder.html/index5.html">EX5</a>
+    <a href="../folder.html/index6.html">EX6</a>
+    <a href="../folder.html/index7.html">EX7</a>
+    <a href="../folder.html/index8.html">EX8</a>
+    <a href="../folder.html/index9.html">EX9</a>
+    <a href="../folder.html/index10.html">EX10</a>
+    </nav>
+    <main>
+    <h1>Recherche dans un tableau</h1>
+    <section>
+      <h2>Enoncé</h2>
+      <div class="part">
+        <p>
+          Ecrire un programme Javascript qui permet de rechercher une valeur dans un tableau d’entier. 
+          L’utilisateur doit suivre les étapes suivantes :
+          1.	Saisir la taille du tableau, 
+          2.	Remplir le tableau par des entiers
+          3.	Introduire la valeur à rechercher
+          4.	Cliquer sur le boutons « Rechercher »
+          Le programme affiche ensuite un message si la valeur à rechercher existe ou non dans le tableau.
+          
+      </p>
+      </div>
+    </section>
+    <section>
+        <h2>Démo</h2>
+        <div class="part">
+        <div  class="contenu">
+            <label>Donner la taille du tableau</label>
+            <input id="numberoftable" type="text">
+            <button onclick="maketable()">Valider</button><br>
+        </div>
+          <label>Veuiller remplir le tableau</label>
+          <div id="inputs">
+          </div>
+          <br>
+          <div  class="contenu">
+              <label>Donner la valeur à rechercher dans le tableau</label>
+              <input id="searchfor" type="text">
+              <button onclick="searchtable()">Rechercher</button><br>
+          </div>
+          <span id="result">Le resultat de la recherche s’affiche ici</span>
+        </div>
+    </section>
+      <section>
+        <h2>Code source</h2>
+          <p class="part">
+            function searchinthearray (thearray , thevalue) {<br>
+              for (i = 0 ; i&lt; thearray . length ; i++){<br>
+              if (thearray [i] == thevalue ){<br>
+              return true ;<br>
+              break;<br>
+              }<br>
+              }<br>
+              }<br>
+              function maketable() {<br>
+                  inputs . innerHTML = ""<br>
+                  for(i = 0 ; i 	&lt;  Number (numberoftable . value) ; i++){<br>
+                      console . log(i);<br>
+                      inputs . innerHTML += "	&lt;&#105;&#110;&#112;&#117;&#116; type = 'text' id = ' inputid" +i+ " ' >"<br>
+              }<br>
+              }<br>
+              const group = [];<br>
+              function searchtable() {<br>
+                  group.length = 0 ;<br>
+                  for(i = 0 ; i 	&lt;  Number (numberoftable .value) ; i++){<br>
+                      group . push (document . getElementById ("inputid"+i) . value);<br>
+              }<br>
+              if( searchinthearray (group , searchfor.value)){<br>
+                  result . innerHTML = searchfor.value + " found";<br>
+              } else {<br>
+                  result . innerHTML = searchfor . value + "not found";<br>
+                  }<br>
+                  }
+                    </p>
+      </section>
+    </main>
+  </body>
+</html>

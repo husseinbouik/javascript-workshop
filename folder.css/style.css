@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px ;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+main {
+  margin: 0 auto;
+  width: 90%;
+  
+}
+h2 {
+  font-size: 64px;
+  padding-top: 50px;
+}
+h3 {
+  background-color: #c7c7c7;
+  font-weight: 600;
+  font-size: 24px;
+  width: fit-content;
+  padding: 10px 100px 10px 10px;
+  margin-top: 30px;
+}
+p {
+  background-color: #f1f1f1;
+  font-size: 24px;
+  padding: 30px 40px 20px 20px;
+}
+section {
+    background-color: #F1F1F1;
+    padding: 30px 10% 15px;
+}
+input {
+    font-size: 18px;
+    border: none;
+    margin: 10px 20px;
+    padding: 5px;
+}
+.inpot-lebet {
+    margin-bottom: 30px;
+    }
+.inp1 {
+    padding: 5px;
+    border: none;
+    margin-left: 30px;
+}
+.inp2 {
+    padding: 5px;
+    border: none;
+    margin-left: 26px;
+}
+.inp3 {
+    padding: 5px;
+    border: none;
+    margin-left: 19px;
+}
+button {
+    background-color: black;
+    color: white;
+    padding: 8px 50px;
+    border: none;
+    margin-left: 40%;
+}
+button:hover {
+  background-color: #D33C3C;
+}
+span {
+    font-size: 24px;
+    margin-left: 8%;
+}
+/* ex6 */
+BUtton {
+  background-color: black;
+  margin: 30px 10px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+.inp {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+}
+output {
+  background-color: white;
+  padding: 5px 60px;
+}

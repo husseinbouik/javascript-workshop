@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brief-4</title>
+    <link rel="stylesheet" href="../folder.css/style4.css">
+    <script src="../folder.js/script4.js"></script>
+</head>
+<body>
+    <nav>
+    <a href="../folder.html/index1.html">EX1</a>
+    <a href="../folder.html/index2.html">EX2</a>
+    <a href="..folder.html/index3.html">EX3</a>
+    <a href="../folder.html/index4.html">EX4</a>
+    <a href="../folder.html/index5.html">EX5</a>
+    <a href="../folder.html/index6.html">EX6</a>
+    <a href="../folder.html/index7.html">EX7</a>
+    <a href="../folder.html/index8.html">EX8</a>
+    <a href="../folder.html/index9.html">EX9</a>
+    <a href="../folder.html/index10.html">EX10</a>
+    </nav>
+    <main>
+    <h1>Devine le nombre !</h1>
+    <section>
+        <h2>Enoncé</h2>
+        <p class="part">
+            L’utilisateur doit deviner un nombre entre 1 et 50 que le programme a
+            choisi aléatoirement en 10 tentatives. Quand l’utilisateur entre une
+            valeur, on lui affiche le nombre de tentatives restantes, ainsi qu’un
+            message indiquant si sa réponse est correcte ou pas.
+        </p>
+    </section>
+    <section>
+        <h2>Démo</h2>
+        <div class="part">
+            <div class="contenu">
+                <p>Tentatives restantes : <span id="numberMoine">10</span> /10</p>
+                <div class="input-buttom">
+                    <input id="NumberValue" type="number">
+                    <button id="theplayerbtn" onclick=" Démo()">Envoyer</button>
+                </div>
+                <p id="NumberResult">Réesseyez encore !</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Code source</h2>
+        <p class="part">
+            const randomNumber = Math . floor (Math.random() * 50) + 1;<br>
+            console . log (randomNumber);<br>
+            let i = 10 ;<br>
+            function Démo() {<br>
+            i--;<br>
+            numberMoine . innerHTML = i ;<br>
+            while( i >= 0){<br>
+            if(i &lt;= 0){<br>
+            NumberResult . innerHTML = "Game Over!!";<br>
+            theplayerbtn . outerHTML ="";        <br>
+            break;<br>
+            }<br>
+            if(NumberValue. value == randomNumber ){<br>
+                NumberResult .innerHTML = "Bravo!!";<br>
+            theplayerbtn . outerHTML ="";     <br>   
+            break;<br>
+            } else {<br>
+                NumberResult . innerHTML = "";<br>
+                NumberResult . innerHTML = "Réesseyez encore !";<br>
+            break;<br>
+            }<br>
+            }<br>
+            }
+    </p>
+    </section>
+    </main>
+</body>
+</html>

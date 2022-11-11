@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brief-4</title>
+    <link rel="stylesheet" href="../folder.css/style5.css">
+    
+</head>
+<body>
+    <nav>
+        <a href="../folder.html/index1.html">EX1</a>
+        <a href="../folder.html/index2.html">EX2</a>
+        <a href="../folder.html/index3.html">EX3</a>
+        <a href="../folder.html/index4.html">EX4</a>
+        <a href="../folder.html/index5.html">EX5</a>
+        <a href="../folder.html/index6.html">EX6</a>
+        <a href="../folder.html/index7.html">EX7</a>
+        <a href="../folder.html/index8.html">EX8</a>
+        <a href="../folder.html/index9.html">EX9</a>
+        <a href="../folder.html/index10.html">EX10</a>
+    </nav>
+        <main>
+            <h1>Losange en étoiles</h1>
+            <section>
+                <h2>Enoncé</h2>
+                <p class="part">
+                    Ce programme a pour objectif de dessiner un losange en étoiles
+                    dont la longueur des diagonales est un nombre impair saisi par
+                    l’utilsateur. Dans le cas où l’utilisateur entre un nombre pair,
+                    il faut afficher une erreur.
+                </p>
+            </section>
+            <section>
+                <h2>Démo</h2>
+                <div class="part"  id="multiple">
+                    <div class="contenu">
+                        <label>Saisir la longueur des diagonales </label>
+                        <input type="number" id="nmbr" >
+                        <button type="button" id="dessiner">Dessiner</button><br>
+                    </div>
+                    <p class="resoltaa" id="p"></p>
+                    <p class="resoltaa" id="u"></p>
+                </div>
+                <script src="../folder.js/script5.js"></script>
+            </section>
+            <section>
+                <h2>Code source</h2>
+                <p class="part">
+                    function diamond(val) {<br>
+                        var y, w, shape = ''; <br>
+                        for(y = 0; y  val * 2 - 1; y += 2) {<br>
+                        if (val % 2 != 0) {<br>
+                            w = y  &lt; val ? y : val * 2 - y - 2;<br>
+                            shape += Array(val - w) . join(" ") + Array(w + 1).join('* ') + '*\n';<br>
+                            document . getElementById ("u") . innerHTML = "";<br>
+                        } else {<br>
+                            document . getElementById ( "u" ) . innerHTML = "ERROR entrer un nombre Impair";<br>
+                        }<br>
+                        }<br>
+                        return ('&lt;pre>' + shape + '&lt;/pre>');<br>
+                    }<br>
+                        document . getElementById ("dessiner") . onclick = function () {<br>
+                        let nm = document . getElementById ( "nmbr" ) . value;<br>
+                        const result = diamond (nm);<br>
+                        document . getElementById ( "p" ) . innerHTML = result ;<br>
+                    }
+                </p>
+            </section>
+        </main>
+</body>
+</html>
